@@ -1,0 +1,5 @@
+Student Scores (insertion order):
+78, 92, 65, 88, 95, 72, 84, 90
+
+Additional score inserted afterward (for insertion-cost demo):
+99
