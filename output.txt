@@ -1,0 +1,38 @@
+=====================================================
+Part (a): Building Max Heap by inserting scores
+Input sequence: 78, 92, 65, 88, 95, 72, 84, 90
+=====================================================
+Inserted 78 -> Heap array: [ 78 ]
+Inserted 92 -> Heap array: [ 92 78 ]
+Inserted 65 -> Heap array: [ 92 78 65 ]
+Inserted 88 -> Heap array: [ 92 88 65 78 ]
+Inserted 95 -> Heap array: [ 95 92 65 78 88 ]
+Inserted 72 -> Heap array: [ 95 92 72 78 88 65 ]
+Inserted 84 -> Heap array: [ 95 92 84 78 88 65 72 ]
+Inserted 90 -> Heap array: [ 95 92 84 90 88 65 72 78 ]
+
+Total comparisons made during all 8 heap insertions: 12
+
+=====================================================
+Part (b): Finding the highest score
+=====================================================
+Max Heap approach   -> Maximum = 95, comparisons used = 0 (root is always max)
+Linear Search approach -> Maximum = 95, comparisons used = 7
+
+--- Demonstrating an INSERTION of a new score (99) ---
+Inserted 99 -> Heap array: [ 99 95 84 92 88 65 72 78 90 ]
+Max Heap: insertion cost = 3 comparisons, new max retrieval cost = 0 comparisons
+Linear Array: insertion cost = 0 comparisons (append), new max retrieval cost = 8 comparisons (full rescan), max = 99
+
+=====================================================
+Part (c): Effect of increasing number of students (n)
+=====================================================
+n        MaxHeap: insert+findMax      LinearArray: insert+findMax 
+8        13.0                         28.0                        
+16       38.0                         120.0                       
+32       103.0                        496.0                       
+64       264.0                        2016.0                      
+128      649.0                        8128.0                      
+256      1546.0                       32640.0                     
+512      3595.0                       130816.0                    
+1024     8204.0                       523776.0                    
